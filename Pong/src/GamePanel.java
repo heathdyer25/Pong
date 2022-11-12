@@ -164,12 +164,12 @@ public class GamePanel extends JPanel implements Runnable {
 		
 		//give  player 1 point and creates new paddles & ball.
 		if (ball.x <= 0) {
-			score.player1++;
+			score.player2++;
 			newPaddles();
 			newBall();
 		}
 		if (ball.x >= GAME_WIDTH) {
-			score.player2++; 
+			score.player1++; 
 			newPaddles();
 			newBall();
 		}
